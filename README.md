@@ -6,7 +6,7 @@
 ![Java][java-shield]
 ![Spring][spring-shield]
 
-<!-- <p align="center">:bangbang: Project available to access at: https://nitaicharan.github.io/Udemy-SBHRESTIJWTS3MSQLMDB1 :bangbang:</p> -->
+<p align="center">:bangbang: Documentation available to access at: https://nitaicharan.github.io/Udemy-SBHRESTIJWTS3MSQLMDB1 :bangbang:</p>
 
 <!--[![](Udemy-SBHRESTIJWTS3MSQLMDB1.png)](https://nitaicharan.github.io/Udemy-SBHRESTIJWTS3MSQLMDB1/)-->
 <a href="https://nitaicharan.github.io/Udemy-SBHRESTIJWTS3MSQLMDB1">
@@ -24,7 +24,7 @@ This project was part of the Udemy course "Spring Boot, Hibernate, REST, Ionic, 
 - [Certificate][certificate-url]
 
 ### Certificate
-This certificate above verifies that [Nitai Charan][udemy-url] successfully completed the course [Spring Boot, Hibernate, REST, Ionic, JWT, S3, MySQL, MongoDB][course-url] on ??/??/???? as taught by [Nelio Alves][instructor-url] on Udemy. The certificate indicates the entire course was completed as validated by the student.
+This certificate above verifies that [Nitai Charan][udemy-url] successfully completed the course [Spring Boot, Hibernate, REST, Ionic, JWT, S3, MySQL, MongoDB][course-url] on 12/04/2020 as taught by [Nelio Alves][instructor-url] on Udemy. The certificate indicates the entire course was completed as validated by the student.
 
 <p align="center">
   <img src="CERTIFICATE.jpg">
@@ -39,31 +39,45 @@ This certificate above verifies that [Nitai Charan][udemy-url] successfully comp
 [![Instagram][instagram-shield]][instagram-url]
 [![Twitter][twitter-shield]][twitter-url]
 
-<!-- 
-
 ## Development GitHub Pages
 
+<!-- http://localhost:<port>/swagger-ui.html -->
+
+<!-- pretty-swag -i doc/api-docs.json -o doc/index.html -->
+<!-- swagger-codegen-cli generate -i http://localhost:<port>/v3/api-docs -o doc/ -l html2 -->
+<!-- bootprint openapi http://localhost:8080/v3/api-docs target/ -->
+
 ```
-ng build --prod --base-href=/Udemy-SBHRESTIJWTS3MSQLMDB1/
+Sava json http://localhost:<port>/v3/api-docs --> /doc
+
+spectacle doc/api-docs.json  -t doc/
 
 git add -A
 git commit -m <titule> <message>
 git push origin <branch>
-git subtree push --prefix dist/course origin gh-pages
-git push origin `git subtree split --prefix dist/course master`:gh-pages --force
+git subtree push --prefix doc/ origin gh-pages
+git push origin `git subtree split --prefix doc master`:gh-pages --force
 ```
-<!-- 
+
+## Deploy application
+
+```
+- Get environment variables on https://dashboard.heroku.com/apps/udemy-sbhrestijwts3msqlmdb1/settings
+- Set variables on project-enviroments.env file
+
+docker-compose up --detach
+```
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- https://markdownguide.org/basic-syntax/#reference-style-links -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- https://markdownguide.org/basic-syntax/#reference-style-links -->
 
 <!-- ALIES README -->
-[course-url]: https://www.udemy.com/course/spring-boot-ionic/
-[instructor-url]: https://www.udemy.com/user/nelio-alves/
-[certificate-url]: #
+[course-url]: https://udemy.com/course/spring-boot-ionic/
+[instructor-url]: https://udemy.com/user/nelio-alves/
+[certificate-url]: https://ude.my/UC-477d4f03-76ff-4721-aad1-87890aaa1955
 
 <!-- CONTACT SHIELDS -->
 
@@ -82,7 +96,7 @@ git push origin `git subtree split --prefix dist/course master`:gh-pages --force
 [udemy-shield]: https://img.shields.io/badge/-Udemy-black.svg?logo=udemy&colorB=EC5252&logoColor=white
 [udemy-url]: https://udemy.com/user/nitai-charan/
 [hackerrank-shield]: https://img.shields.io/badge/-HackerRank-white.svg?logo=hackerrank&colorB=2EC866&logoColor=white
-[hackerrank-url]: https://www.hackerrank.com/nitaicharan
+[hackerrank-url]: https://hackerrank.com/nitaicharan
 
 <!-- PROJECT SHIELDS -->
 
